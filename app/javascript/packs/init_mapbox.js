@@ -33,9 +33,9 @@ const initMapbox = () => {
           .setLngLat([ marker.lng, marker.lat ])
           .setPopup(popup)
           .addTo(map);
-      });
 
-    fitMapToMarkers(map, markers);
+        fitMapToMarkers(map, markers);
+      });
 
     map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken,
                                       mapboxgl: mapboxgl }));
